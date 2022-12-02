@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  database:
+    image: "postgres:13"
+    container_name: "pg13"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "password"
+      POSTGRES_DB: "db"
+    volumes:
+      - ./data:/var/lib/postgresql/data/
+      - ./backup:/work/backup/
