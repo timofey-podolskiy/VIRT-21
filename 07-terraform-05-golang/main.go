@@ -5,9 +5,9 @@ import (
     "errors"
 )
 
-func feetToMetres(feet float64) float64 {
+func metresToFeet(metres float64) float64 {
 	const METRES_IN_FEET float64 = 0.3048
-	return feet * METRES_IN_FEET
+	return metres * METRES_IN_FEET
 }
 
 func intListMin(list []int) (int, error) {

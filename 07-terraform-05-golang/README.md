@@ -51,9 +51,9 @@ import (
     "errors"
 )
 
-func feetToMetres(feet float64) float64 {
+func metresToFeet(metres float64) float64 {
 	const METRES_IN_FEET float64 = 0.3048
-	return feet * METRES_IN_FEET
+	return metres * METRES_IN_FEET
 }
 
 func intListMin(list []int) (int, error) {
@@ -106,7 +106,6 @@ func main() {
     fmt.Print("\n\n### TASK 3 ###\n")
     fmt.Print(printMultiplesOf3())
 }
-
 ```
 
 ![img.png](assets/img.png)
