@@ -7,7 +7,7 @@ import (
 
 func metresToFeet(metres float64) float64 {
 	const METRES_IN_FEET float64 = 0.3048
-	return metres * METRES_IN_FEET
+	return metres / METRES_IN_FEET
 }
 
 func intListMin(list []int) (int, error) {
@@ -44,7 +44,7 @@ func main() {
 	if (err != nil) {
 	    fmt.Print("Incorrect input")
 	} else {
-	    fmt.Printf("%f metres equals %f feet", input, feetToMetres(input))
+	    fmt.Printf("%f metres equals %f feet", input, metresToFeet(input))
 	}
 
     fmt.Print("\n\n### TASK 2 ###\n")

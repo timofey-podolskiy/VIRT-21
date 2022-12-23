@@ -53,7 +53,7 @@ import (
 
 func metresToFeet(metres float64) float64 {
 	const METRES_IN_FEET float64 = 0.3048
-	return metres * METRES_IN_FEET
+	return metres / METRES_IN_FEET
 }
 
 func intListMin(list []int) (int, error) {
@@ -101,7 +101,7 @@ func main() {
         fmt.Print(err)
     } else {
         fmt.Printf("The minimum number of the set is %d", min)
-    }
+    }![img.png](img.png)
 
     fmt.Print("\n\n### TASK 3 ###\n")
     fmt.Print(printMultiplesOf3())
