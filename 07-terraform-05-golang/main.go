@@ -28,9 +28,9 @@ func intListMin(list []int) (int, error) {
 func printMultiplesOf3() []int {
     result := make([]int, 0);
     for i := 1; i <= 100; i++ {
-		if (i % 3 == 0) {
-			result = append(result, i)
-		}
+        if (i % 3 == 0) {
+            result = append(result, i)
+        }
 	}
 	return result
 }
