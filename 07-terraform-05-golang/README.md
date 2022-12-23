@@ -83,15 +83,15 @@ func printMultiplesOf3() []int {
 
 func main() {
     fmt.Print("### TASK 1 ###\n")
-	fmt.Print("Enter a number: ")
-	var input float64
-	_, err := fmt.Scanf("%f", &input)
-
-	if (err != nil) {
-	    fmt.Print("Incorrect input")
-	} else {
-	    fmt.Printf("%f metres equals %f feet", input, metresToFeet(input))
-	}
+    fmt.Print("Enter a number: ")
+    var input float64
+    _, err := fmt.Scanf("%f", &input)
+    
+    if (err != nil) {
+        fmt.Print("Incorrect input")
+    } else {
+        fmt.Printf("%f metres equals %f feet", input, metresToFeet(input))
+    }
 
     fmt.Print("\n\n### TASK 2 ###\n")
     var list = []int{48,96,86,68,57,82,63,70,37,34,83,27,19,97,9,17,}
