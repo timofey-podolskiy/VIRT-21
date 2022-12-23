@@ -6,8 +6,8 @@ import (
 )
 
 func metresToFeet(metres float64) float64 {
-	const METRES_IN_FEET float64 = 0.3048
-	return metres / METRES_IN_FEET
+    const METRES_IN_FEET float64 = 0.3048
+    return metres / METRES_IN_FEET
 }
 
 func intListMin(list []int) (int, error) {
