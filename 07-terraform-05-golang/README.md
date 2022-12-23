@@ -74,11 +74,11 @@ func intListMin(list []int) (int, error) {
 func printMultiplesOf3() []int {
     result := make([]int, 0);
     for i := 1; i <= 100; i++ {
-		if (i % 3 == 0) {
-			result = append(result, i)
-		}
-	}
-	return result
+        if (i % 3 == 0) {
+            result = append(result, i)
+        }
+    }
+    return result
 }
 
 func main() {
@@ -90,7 +90,7 @@ func main() {
 	if (err != nil) {
 	    fmt.Print("Incorrect input")
 	} else {
-	    fmt.Printf("%f metres equals %f feet", input, feetToMetres(input))
+	    fmt.Printf("%f metres equals %f feet", input, metresToFeet(input))
 	}
 
     fmt.Print("\n\n### TASK 2 ###\n")
@@ -101,7 +101,7 @@ func main() {
         fmt.Print(err)
     } else {
         fmt.Printf("The minimum number of the set is %d", min)
-    }![img.png](img.png)
+    }
 
     fmt.Print("\n\n### TASK 3 ###\n")
     fmt.Print(printMultiplesOf3())

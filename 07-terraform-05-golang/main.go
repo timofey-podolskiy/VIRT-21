@@ -31,8 +31,8 @@ func printMultiplesOf3() []int {
         if (i % 3 == 0) {
             result = append(result, i)
         }
-	}
-	return result
+    }
+    return result
 }
 
 func main() {
